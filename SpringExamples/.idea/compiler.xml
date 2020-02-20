@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oauth2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aop" target="1.8" />
+      <module name="batch-decorator" target="1.8" />
+      <module name="batch-partitioner" target="1.8" />
+      <module name="boot-hateoas" target="1.8" />
+      <module name="command-line-runner" target="1.8" />
+      <module name="context-path-server-port" target="1.8" />
+      <module name="custom-spring-boot-banner" target="1.8" />
+      <module name="disable-spring-boot-banner" target="1.8" />
+      <module name="email" target="1.8" />
+      <module name="embedded-jetty-server" target="1.8" />
+      <module name="enable-scheduling" target="1.8" />
+      <module name="get-loaded-beans-info" target="1.8" />
+      <module name="hessian-client" target="1.8" />
+      <module name="hessian-server" target="1.8" />
+      <module name="i18n" target="1.8" />
+      <module name="logger-configuration" target="1.8" />
+      <module name="main-class" target="1.8" />
+      <module name="minimum-setup" target="1.8" />
+      <module name="oauth2" target="1.8" />
+      <module name="packaging-war" target="1.8" />
+      <module name="rest-crud-hibernate" target="1.8" />
+      <module name="rest-hateoas" target="1.8" />
+      <module name="rest-jersey-example" target="1.8" />
+      <module name="resttemplate" target="1.8" />
+      <module name="rmi-client" target="1.8" />
+      <module name="rmi-server" target="1.8" />
+      <module name="server-customization" target="1.8" />
+      <module name="spring-rmi" target="1.8" />
+      <module name="spring-webflux-demo" target="1.8" />
+      <module name="SpringExamples" target="1.8" />
+      <module name="ssl-https" target="1.8" />
+      <module name="swagger-ui" target="1.8" />
+      <module name="template-freemarker" target="1.8" />
+      <module name="template-jsp" target="1.8" />
+      <module name="template-mustache" target="1.8" />
+      <module name="template-thymeleaf" target="1.8" />
+      <module name="unit-testing" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aop" options="-parameters" />
+      <module name="batch-decorator" options="-parameters" />
+      <module name="batch-partitioner" options="-parameters" />
+      <module name="boot-hateoas" options="-parameters" />
+      <module name="command-line-runner" options="-parameters" />
+      <module name="context-path-server-port" options="-parameters" />
+      <module name="custom-spring-boot-banner" options="-parameters" />
+      <module name="disable-spring-boot-banner" options="-parameters" />
+      <module name="email" options="-parameters" />
+      <module name="embedded-jetty-server" options="-parameters" />
+      <module name="enable-scheduling" options="-parameters" />
+      <module name="get-loaded-beans-info" options="-parameters" />
+      <module name="hessian-client" options="-parameters" />
+      <module name="hessian-server" options="-parameters" />
+      <module name="i18n" options="-parameters" />
+      <module name="logger-configuration" options="-parameters" />
+      <module name="main-class" options="-parameters" />
+      <module name="minimum-setup" options="-parameters" />
+      <module name="oauth2" options="-parameters" />
+      <module name="packaging-war" options="-parameters" />
+      <module name="rest-crud-hibernate" options="-parameters" />
+      <module name="rest-hateoas" options="-parameters" />
+      <module name="rest-jersey-example" options="-parameters" />
+      <module name="resttemplate" options="-parameters" />
+      <module name="rmi-client" options="-parameters" />
+      <module name="rmi-server" options="-parameters" />
+      <module name="server-customization" options="-parameters" />
+      <module name="spring-webflux-demo" options="-parameters" />
+      <module name="ssl-https" options="-parameters" />
+      <module name="swagger-ui" options="-parameters" />
+      <module name="template-freemarker" options="-parameters" />
+      <module name="template-jsp" options="-parameters" />
+      <module name="template-mustache" options="-parameters" />
+      <module name="template-thymeleaf" options="-parameters" />
+      <module name="unit-testing" options="-parameters" />
+    </option>
+  </component>
+</project>

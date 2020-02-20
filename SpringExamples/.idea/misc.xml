@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/aop/pom.xml" />
+        <option value="$PROJECT_DIR$/batch-decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/batch-partitioner/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-hateoas/pom.xml" />
+        <option value="$PROJECT_DIR$/command-line-runner/pom.xml" />
+        <option value="$PROJECT_DIR$/context-path-server-port/pom.xml" />
+        <option value="$PROJECT_DIR$/custom-spring-boot-banner/pom.xml" />
+        <option value="$PROJECT_DIR$/disable-spring-boot-banner/pom.xml" />
+        <option value="$PROJECT_DIR$/email/pom.xml" />
+        <option value="$PROJECT_DIR$/embedded-jetty-server/pom.xml" />
+        <option value="$PROJECT_DIR$/enable-scheduling/pom.xml" />
+        <option value="$PROJECT_DIR$/get-loaded-beans-info/pom.xml" />
+        <option value="$PROJECT_DIR$/i18n/pom.xml" />
+        <option value="$PROJECT_DIR$/logger-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/main-class/pom.xml" />
+        <option value="$PROJECT_DIR$/minimum-setup/pom.xml" />
+        <option value="$PROJECT_DIR$/packaging-war/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-crud-hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-hateoas/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-jersey-example/pom.xml" />
+        <option value="$PROJECT_DIR$/resttemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/server-customization/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rmi/hessian-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rmi/hessian-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rmi/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rmi/rmi-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rmi/rmi-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-webflux-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/ssl-https/pom.xml" />
+        <option value="$PROJECT_DIR$/swagger-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/template-freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/template-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/template-mustache/pom.xml" />
+        <option value="$PROJECT_DIR$/template-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/unit-testing/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

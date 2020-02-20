@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Port 8081 Login Page</title>
+<script>
+	function validate() {
+		if (document.loginForm.username.value === "") {
+			alert("Provide Username");
+			document.loginForm.username.focus();
+			return false;
+		}
+		if (document.loginForm.password.value == "") {
+			alert("Provide Password");
+			document.loginForm.password.focus();
+			return false;
+		}
+		if (document.loginForm.username.value === "volante" && document.loginForm.password.value === "123456") {
+			return true;
+		} else {
+			alert("Invalid Credentials");
+			return false;
+		}
+	}
+</script>
+<style>
+	form {
+  		border: 3px solid #f1f1f1;
+	}
+	input[type=text], input[type=password] {
+ 		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		box-sizing: border-box;
+	}
+	button {
+  		background-color: #4CAF50;
+  		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		cursor: pointer;
+  		width: 100%;
+	}
+	button:hover {
+  		opacity: 0.8;
+	}
+	.container {
+  		padding: 100px;
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<form action="http://localhost:8080/acceptPage" name="loginForm" onsubmit="return(validate());">
+		<div>
+		<table align="center">
+			<tr>
+				<td><label><b>Username</b></label></td>
+				<td><input type="text" name="username" placeholder="Username" required></td>
+			</tr>
+			<tr>
+				<td><label><b>Password</b></label></td>
+				<td><input type="password" name="password" placeholder="Password" required></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit">Submit</button></td>
+			</tr>
+		</table>
+		</div>
+		
+	</form>
+</div>
+	
+</body>
+</html>

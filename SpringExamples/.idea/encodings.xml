@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/oauth2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/packaging-war/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-crud-hibernate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-hateoas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-jersey-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resttemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-customization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rmi/hessian-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rmi/hessian-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rmi/rmi-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rmi/rmi-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-webflux-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssl-https/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swagger-ui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-freemarker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-jsp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-mustache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/unit-testing/src/main/java" charset="UTF-8" />
+  </component>
+</project>

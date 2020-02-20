@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://openbanking.wso2.com/demos/aisp/Banks/bank_consent.html?bank=1 -->
+<html lang="en" class="bank"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="WSO2">
+      
+    <title>Citizen Bank Open Banking Solution</title>
+
+    <link rel="stylesheet" href="../../css/volob-consent/bootstrap.min.css" id="bootstrap">
+    <link rel="stylesheet" href="../../css/volob-consent/font-wso2.min.css">
+    <link href="../../css/volob-consent/css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/volob-consent/citizenbank.css" id="theme">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function submitform() {
+    	
+<<<<<<< HEAD
+    	window.location.href = "http://localhost:8080/custom";
+=======
+    	window.location.href = "http://localhost:8080/authorizesuccess1";
+>>>>>>> 6f97e768786fa57dd0034028740731908308c0a7
+    	
+    	
+      /*  var consent_challenge = location.search.split('consent_challenge=')[1];
+        console.log(consent_challenge);
+
+        var toRet = new Array();
+        if(document.forms["consentform"].acc.length > 1) {
+        document.forms["consentform"].acc.forEach(function(item, index){
+            if(item.checked) {
+                toRet.push(item.value);
+            } 
+        });
+    } else {
+        toRet.push(document.forms["consentform"].acc.value);
+    }
+        document.forms["consentform"].accounts.value = toRet.join(",");
+        document.forms["consentform"].action = "/vol-consent/rest/consent/aispsubmit?consent_challenge=" + consent_challenge;
+        document.forms["consentform"].submit(); */
+    } 
+
+    function rejectform() {
+        var consent_challenge = location.search.split('consent_challenge=')[1];
+        console.log(consent_challenge);
+        document.forms["consentform"].action = "/vol-consent/rest/consent/reject?consent_challenge=" + consent_challenge;
+        document.forms["consentform"].submit();
+    }
+    
+    Date.prototype.addDays = function(days) {
+        var date = new Date(this.valueOf());
+        date.setDate(date.getDate() + days);
+        return date;
+    }
+    function onPageLoad() {
+
+     var date = new Date();
+     var userid = location.search.split('userid=')[1];
+    // httpobj.open("GET","volob-resource-bi/rest/all-accounts?UserId=" + userid,true);
+    // httpobj.setRequestHeader("Accept", "application/json");
+    // httpobj.send();
+
+    $('#expiry').text('Please note this permission is valid till : ' + date.addDays(90));
+    
+        $.getJSON("/vol-consent/rest/consent/getuseraccounts?UserId="+userid, function (data) {
+             $.each(data.Data.Account, function (key, entry) {           
+                  $('#accounts').append('<div class="form-check"><input type="checkbox" value="' + entry.Account[0].Identification + '"  name="acc"><label>' + entry.Account[0].Identification + '<span class="text-muted">- ' + entry.AccountType + ' - ' + entry.AccountSubType + '</span></label></div>')
+      })
+    });
+        }
+    
+</script>
+
+
+
+  </head>
+  <body onLoad="javascript:onPageLoad();">
+      
+    <div class="page-content-wrapper">
+        <div class="container">
+
+            <div class="login-form-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="brand-container add-margin-bottom-5x">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <img src="../../images/volob-consent/citizen_bank_logo.png" class="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 login">
+                        <div class="data-container">
+                            <form class="form-horizontal" method="POST" id="consentform" autocomplete="off">
+                                <input type="hidden" name="accounts">
+                                <h3><strong>Aggregator</strong> is requesting access to your bank account.</h3>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="card card-body bg-light">
+                                            <label class="control-label">Select account(s):</label>
+                                            <div id="accounts"></div>                                      
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <div class="col-md-12">
+                                        <p id="expiry"></p>
+                                    </div>
+                                </div>
+                                
+                                   
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <p>See permission details below</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <ul class="scope">
+                                            <li>ReadAccountsDetail : Allow access to additional elements in the account payload.</li>
+                                            <li>ReadTransactionsCredits : Allow access only to read credit transactions information.
+                                            </li>
+                                            <li>ReadAccountsBasic : Allow access to read basic account information.</li>
+                                            <li>ReadDirectDebits : Allow access to read all direct debit information</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                         <input class="btn btn-primary" type="button" onclick="javascript:submitform();" value="Allow">                                        
+                                         <input class="btn btn-secondary" type="button" onclick="javascript:rejectform();" value="Deny"> 
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+              <div class="container-fluid">
+                <p><span class="bank-name">Citizen Bank</span> | © <script>document.write(new Date().getFullYear());</script> Powered by <a title="WSO2" href="http://wso2.com/" target="_blank"><i class="icon fw fw-wso2"></i></a> Open Banking</p>
+              </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../../js/volob-consent/jquery-3.3.1.min.js.download"></script>
+    <script src="../../js/volob-consent/popper.min.js.download"></script>
+    <script src="../../js/volob-consent/bootstrap.min.js.download"></script>
+    <script src="../../js/volob-consent/demos.js.download"></script>
+  
+</body></html>
